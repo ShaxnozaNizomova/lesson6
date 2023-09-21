@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin btn_mix ($bg-color, $color, $b-shadow, $padding, $b-radius) {
+    background-color:$bg-color;
+    color:$color;
+    box-shadow: $b-shadow;
+    padding:$padding;
+    border-radius:$b-radius;
+}
+%box{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.box{
+   @extend %box;
+     .span1{
+        @include btn_mix(green, white, 50%);
+     }
+     .span2{
+        @include btn_mix(green, white, 50%);
+     }
+}
+.box2{
+    @extend %box;
+    .span1{
+        @include btn_mix(white, green, 0px, 15px, 5px);
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+    .span2{
+        @include btn_mix(green, white, 0px, 15px, 5px);
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+}
+.box3{
+    @extend %box;
+    .span1{
+        @include btn_mix(grey, green, 0px, 15px, 5px);
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+    .span2{
+        @include btn_mix(green, white, 0px, 15px, 5px);
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+}
+.box4{
+    @extend %box;
+    .span1{
+        @include btn_mix(white, grey, 0px, 15px, 5px);
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+    .span2{
+        @include btn_mix(rgb(190, 177, 177), rgb(83, 79, 79), 0px, 15px, 5px);
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+}

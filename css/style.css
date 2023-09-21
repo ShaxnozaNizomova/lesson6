@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box4, .box3, .box2, .box {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.box .span1 {
+  background-color: green;
+  color: white;
+  box-shadow: 0px 10px 10px 0px;
+  padding: 25px;
+  border-radius: 50%;
+}
+.box .span2 {
+  background-color: green;
+  color: white;
+  box-shadow: 0px 10px 10px 0px;
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.box2 .span1 {
+  background-color: white;
+  color: green;
+  box-shadow: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.box2 .span2 {
+  background-color: green;
+  color: white;
+  box-shadow: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+.box3 .span1 {
+  background-color: grey;
+  color: green;
+  box-shadow: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.box3 .span2 {
+  background-color: green;
+  color: white;
+  box-shadow: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+.box4 .span1 {
+  background-color: white;
+  color: grey;
+  box-shadow: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.box4 .span2 {
+  background-color: rgb(190, 177, 177);
+  color: rgb(83, 79, 79);
+  box-shadow: 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
